@@ -40,7 +40,7 @@ export const Content = styled.div`
   min-height: 160px;
 `;
 
-export const Stats = styled.div`
+export const ExtraInfo = styled.div`
   display: flex;
   align-items: center;
 
@@ -52,11 +52,7 @@ export const Stats = styled.div`
 
     img {
       margin: 0;
-    }
-
-    svg path {
-      fill: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-    }
+    } 
 
     span {
       color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
@@ -68,4 +64,11 @@ export const Stats = styled.div`
 export const Languages = styled.div`
   opacity: 0.5;
   font-size: 14px;
+`;
+
+export const IconLink = styled.a`
+  svg {
+    fill: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+    margin-right: 5px;
+  }
 `;

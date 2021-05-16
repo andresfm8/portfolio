@@ -2,16 +2,17 @@ import React, { useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
-import Star from 'components/common/Icons/Star';
-import Fork from 'components/common/Icons/Fork';
-import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
+import { Wrapper, Grid, Item, Content, ExtraInfo, Languages, IconLink } from './styles';
+import Github from 'components/common/Icons/Github';
+import Devpost from 'components/common/Icons/Devpost';
+import Web from 'components/common/Icons/Web';
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
   const {
     github: {
       viewer: {
-        repositories: { edges },
+        pinnedItems: { edges },
       },
     },
   } = useStaticQuery(
@@ -19,21 +20,24 @@ export const Projects = () => {
       {
         github {
           viewer {
-            repositories(first: 8, orderBy: { field: STARGAZERS, direction: DESC }) {
+            pinnedItems(first: 6, types: [REPOSITORY, GIST]) {
+              totalCount
               edges {
                 node {
-                  id
-                  name
-                  url
-                  description
-                  stargazers {
-                    totalCount
-                  }
-                  forkCount
-                  languages(first: 3) {
-                    nodes {
-                      id,
-                      name
+                  ... on GitHub_Repository {
+                    id
+                    name
+                    url
+                    description
+                    stargazers {
+                      totalCount
+                    }
+                    forkCount
+                    languages(first: 3) {
+                      nodes {
+                        id,
+                        name
+                      }
                     }
                   }
                 }
@@ -49,24 +53,25 @@ export const Projects = () => {
       <h2>Projects</h2>
       <Grid>
         {edges.map(({ node }) => (
-          <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
+          <Item key={node.id}  rel="noopener noreferrer" theme={theme}>
             <Card theme={theme}>
               <Content>
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
               </Content>
               <TitleWrap>
-                <Stats theme={theme}>
-                  <div>
-                    <Star color={theme === "light" ? "#000" : "#fff"} />
-                    <span>{node.stargazers.totalCount}</span>
-                  </div>
-                  <div>
-                    <Fork color={theme === "light" ? "#000" : "#fff"} />
-                    <span>{node.forkCount}</span>
-                  </div>
-                </Stats>
-                <Stats theme={theme}>
+                <ExtraInfo theme={theme}>
+                  <IconLink href={node.url} target="_blank">
+                    <Github color={theme === "light" ? "#000" : "#fff"}/>
+                  </IconLink>
+                  <IconLink href={node.url} target="_blank">
+                    <Devpost color={theme === "light" ? "#000" : "#fff"}/>
+                  </IconLink>
+                  <IconLink href={node.url} target="_blank">
+                    <Web color={theme === "light" ? "#000" : "#fff"}/>
+                  </IconLink>
+                </ExtraInfo>
+                <ExtraInfo theme={theme}>
                   <Languages>
                     {
                       node.languages.nodes.map(({ id, name }) => (
@@ -76,7 +81,7 @@ export const Projects = () => {
                       ))
                     }
                   </Languages>
-                </Stats>
+                </ExtraInfo>
               </TitleWrap>
             </Card>
           </Item>
