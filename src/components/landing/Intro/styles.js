@@ -22,6 +22,7 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
+  text-align: center;
 
   @media (max-width: 960px) {
     width: 100%;
@@ -60,12 +61,13 @@ export const Details = styled.div`
 
 export const Thumbnail = styled.div`
   flex: 1;
+  text-align: center;
 
   @media (max-width: 960px) {
     width: 100%;
   }
 
   img {
-    width: 100%;
+    width: 90%;
   }
 `;

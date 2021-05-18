@@ -2,6 +2,15 @@ export const EXPERIENCE_DATA = {
   work_experiences: [
     {
       id: 1,
+      title:  'Web Developer',
+      company: 'Screen Industries Research and Training Centre (SIRT) ',
+      location: 'Remote',
+      type: 'job',
+      date: 'May. 2021 - Present',
+      description: 'field_tbd'
+    }, 
+    {
+      id: 2,
       title:  'Web Developer Co-op',
       company: 'Screen Industries Research and Training Centre (SIRT) ',
       location: 'Remote',
@@ -10,7 +19,7 @@ export const EXPERIENCE_DATA = {
       description: 'field_tbd'
     }, 
     {
-      id: 2,
+      id: 3,
       title:  'Full Stack Developer',
       company: 'Hackademics Club - Sheridan College',
       location: 'Remote',
@@ -19,7 +28,7 @@ export const EXPERIENCE_DATA = {
       description: 'field_tbd'
     },
     {
-      id: 3,
+      id: 4,
       title:  'Operations Specialist',
       company: 'Apple',
       location: 'Toronto, ON',
@@ -28,7 +37,7 @@ export const EXPERIENCE_DATA = {
       description: 'field_tbd'
     },
     {
-      id: 4,
+      id: 5,
       title:  'Event Coordinator & Software Developer',
       company: 'Pueblo Science Hackathon',
       location: 'Remote',
@@ -37,7 +46,7 @@ export const EXPERIENCE_DATA = {
       description: 'field_tbd'
     },
     {
-      id: 5,
+      id: 6,
       title:  'Order Support Associate',
       company: 'Walmart',
       location: 'Mississauga, ON',
