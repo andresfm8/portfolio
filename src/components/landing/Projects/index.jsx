@@ -29,6 +29,7 @@ export const Projects = () => {
                     name
                     url
                     description
+                    homepageUrl
                     stargazers {
                       totalCount
                     }
@@ -64,12 +65,12 @@ export const Projects = () => {
                   <IconLink href={node.url} target="_blank">
                     <Github color={theme === "light" ? "#000" : "#fff"}/>
                   </IconLink>
-                  <IconLink href={node.url} target="_blank">
-                    <Devpost color={theme === "light" ? "#000" : "#fff"}/>
-                  </IconLink>
-                  <IconLink href={node.url} target="_blank">
-                    <Web color={theme === "light" ? "#000" : "#fff"}/>
-                  </IconLink>
+                  {node.homepageUrl ? (
+                    <IconLink href={node.homepageUrl} target="_blank">
+                      <Web color={theme === "light" ? "#000" : "#fff"}/>
+                    </IconLink>)
+                    : ''
+                  }
                 </ExtraInfo>
                 <ExtraInfo theme={theme}>
                   <Languages>
