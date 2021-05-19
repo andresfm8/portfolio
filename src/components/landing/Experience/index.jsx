@@ -14,14 +14,13 @@ import { TimeLine, Wrapper } from './styles';
 
 export const Experience = () => {
   const { theme } = useContext(ThemeContext );
-  const { work_experiences, education_experiences } = EXPERIENCE_DATA;
-
+  const { experiences, education_experiences } = EXPERIENCE_DATA;
 
   return (
     <Wrapper as={Container} id="experiences">
       <h2>Experience</h2>
       <TimeLine >
-        {work_experiences.map(experience => (
+        {experiences.map(experience => (
           <VerticalTimelineElement
             key={experience.id}
             className="vertical-timeline-element--work"
@@ -34,38 +33,18 @@ export const Experience = () => {
             contentArrowStyle={{ borderRight: '0px solid  #fff' }}
             date={`${experience.date} - ${experience.location}`}
             iconStyle={{ background: '#ddd', color: '#fff', boxShadow: '0 1px 6px 0 rgb(0 0 0 / 11%)'}}
-            icon={<Suitcase/>}
+            icon={experience.type == 'job' ? <Suitcase/>: <Education />}
           >
-            <h3 className="vertical-timeline-element-title">{experience.title}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{experience.company}</h4>
+            <h3 className="vertical-timeline-element-title">
+              {experience.title}
+              {experience.diploma ? ` - ${experience.diploma}` : ''}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{experience.organization}</h4>
             <p>
               {experience.description}
             </p>
           </VerticalTimelineElement>
         ))}
-
-        {education_experiences.map(experience => (
-            <VerticalTimelineElement
-              key={experience.id}
-              className="vertical-timeline-element--work"
-              contentStyle={ theme === "light" ? 
-                {background: '#fff', color: '#212121', boxShadow: '0 1px 6px 0 rgb(0 0 0 / 11%)'}
-              : 
-                {background: '#181717', color: '#fff', boxShadow: '0 1px 6px 0 rgb(0 0 0 / 11%)'}
-              }
-              
-              contentArrowStyle={{ borderRight: '0px solid  #fff' }}
-              date={`${experience.date} - ${experience.location}`}
-              iconStyle={{ background: '#ddd', color: '#fff', boxShadow: '0 1px 6px 0 rgb(0 0 0 / 11%)' }}
-              icon={<Education />}
-            >
-              <h3 className="vertical-timeline-element-title">{experience.program}, {experience.diploma}</h3>
-              <h4 className="vertical-timeline-element-subtitle">{experience.institution}</h4>
-              <p>
-                {experience.description}
-              </p>
-          </VerticalTimelineElement>
-        ))}
+        
         <VerticalTimelineElement
             iconStyle={{ background: '#ddd', color: '#fff', boxShadow: '0 1px 6px 0 rgb(0 0 0 / 11%)' }}
             icon={<Star />}

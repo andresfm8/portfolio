@@ -1,11 +1,5 @@
 [
   {
-    "id": 0,
-    "name": "Telegram",
-    "link": "https://t.me/smakosh",
-    "icon": "/icons/telegram.svg"
-  },
-  {
     "id": 1,
     "name": "Github",
     "link": "https://github.com/smakosh",
@@ -13,14 +7,14 @@
   },
   {
     "id": 2,
-    "name": "StackOverflow",
-    "link": "https://stackoverflow.com/users/story/7396786",
-    "icon": "/icons/stackoverflow.svg"
+    "name": "Devpost",
+    "link": "https://twitter.com/smakosh",
+    "icon": "/icons/devpost.svg"
   },
   {
     "id": 3,
-    "name": "Twitter",
+    "name": "Linkedin",
     "link": "https://twitter.com/smakosh",
-    "icon": "/icons/twitter.svg"
+    "icon": "/icons/linkedin.svg"
   }
 ]

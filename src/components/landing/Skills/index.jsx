@@ -4,6 +4,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/about.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import { Link } from 'gatsby';
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
@@ -22,7 +23,7 @@ export const Skills = () => {
           <p>
             Oustide of work, I am always looking to find new hiking trails or to try new food. I also love raccoons and Korean dramas!
           </p>
-          <Button as={AnchorLink} href="#contact">
+          <Button as={Link}  href="http://www.linkedin.com/in/andres-munevar/" target="_blank">
             Contact Me
           </Button>
         </Details>
