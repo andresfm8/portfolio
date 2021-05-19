@@ -7,7 +7,7 @@ export const EXPERIENCE_DATA = {
       location: 'Remote',
       type: 'job',
       date: 'May. 2021 - Present',
-      description: 'field_tbd'
+      description: 'PHP, Timber, Twig, JavaScript , HTML, CSS, WordPress'
     }, 
     {
       id: 2,
@@ -16,7 +16,7 @@ export const EXPERIENCE_DATA = {
       location: 'Remote',
       type: 'job',
       date: 'Jan. 2021 - Apr. 2021',
-      description: 'field_tbd'
+      description: 'PHP, Timber, Twig, JavaScript, HTML, CSS, WordPress'
     }, 
     {
       id: 3,
@@ -25,7 +25,7 @@ export const EXPERIENCE_DATA = {
       location: 'Remote',
       type: 'job',
       date: 'Sep. 2020 - Apr. 2021',
-      description: 'field_tbd'
+      description: 'Gatsby, GraphQL HTML, SCSS'
     },
     {
       id: 4,
@@ -34,7 +34,6 @@ export const EXPERIENCE_DATA = {
       location: 'Toronto, ON',
       type: 'job',
       date: 'Apr. 2019 - Feb. 2021',
-      description: 'field_tbd'
     },
     {
       id: 5,
@@ -43,7 +42,7 @@ export const EXPERIENCE_DATA = {
       location: 'Remote',
       type: 'job',
       date: 'Jan. 2020 - Sep. 2020',
-      description: 'field_tbd'
+      description: 'Discord.js, Node.js'
     },
     {
       id: 6,
@@ -54,7 +53,7 @@ export const EXPERIENCE_DATA = {
       location: 'Brampton, ON / Oakville, ON',
       type: 'education',
       date: 'Sep. 2019 - Dec. 2022 (Expected)',
-      description: 'Relevant Courses: etc'
+      description: 'Relevant Courses: Algorithms and Data Structures, Object Oriented Programming, Software Design, Database Design'
     },
     {
       id: 7,
@@ -63,7 +62,6 @@ export const EXPERIENCE_DATA = {
       location: 'Mississauga, ON',
       type: 'job',
       date: 'Nov. 2017 - Aug. 2019',
-      description: 'field_tbd'
     },
   ],
 }

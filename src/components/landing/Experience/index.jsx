@@ -40,7 +40,7 @@ export const Experience = () => {
               {experience.diploma ? ` - ${experience.diploma}` : ''}</h3>
             <h4 className="vertical-timeline-element-subtitle">{experience.organization}</h4>
             <p>
-              {experience.description}
+              {experience.description ? experience.description : ''}
             </p>
           </VerticalTimelineElement>
         ))}

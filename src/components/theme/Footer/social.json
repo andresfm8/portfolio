@@ -16,5 +16,10 @@
     "name": "Linkedin",
     "link": "https://www.linkedin.com/in/andres-munevar/",
     "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 4,
+    "name": "Resume",
+    "icon": "/icons/resume.svg"
   }
 ]

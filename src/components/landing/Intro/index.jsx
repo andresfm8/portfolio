@@ -7,6 +7,7 @@ import avatar from 'assets/illustrations/avatar.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 import { Links } from 'components/theme/Footer/styles';
 import social from '../../theme/Footer/social.json';
+import resume from '/static/Andres_Munevar_Resume.pdf';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
@@ -23,7 +24,7 @@ export const Intro = () => {
           </Button>
           <Links style = {{display: 'block', marginTop: '1em'}}>
             {social.map(({ id, name, link, icon }) => (
-              <a key={id} href={link} target="_blank" 
+              <a key={id} href={link ? link : resume} target="_blank" 
                 rel="noopener noreferrer" aria-label={`follow me on ${name}`}
               >
                 <img width="24" src={icon} alt={name} />
