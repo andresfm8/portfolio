@@ -2,7 +2,7 @@ module.exports = {
   defaultTitle: 'Andres Munevar',
   logo: '../../static/favicon/avataaars.png',
   author: 'Andres Munevar',
-  url: 'https://portfolio.smakosh.com',
+  url: 'https://andresmunevar.me',
   legalName: 'Andres Munevar',
   defaultDescription: 'I\'m Andres, a Full Stack Engineer!',
   socialLinks: {

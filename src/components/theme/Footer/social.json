@@ -2,19 +2,19 @@
   {
     "id": 1,
     "name": "Github",
-    "link": "https://github.com/smakosh",
+    "link": "https://github.com/andresfm8/",
     "icon": "/icons/github.svg"
   },
   {
     "id": 2,
     "name": "Devpost",
-    "link": "https://twitter.com/smakosh",
+    "link": "https://devpost.com/andresfmunevarm",
     "icon": "/icons/devpost.svg"
   },
   {
     "id": 3,
     "name": "Linkedin",
-    "link": "https://twitter.com/smakosh",
+    "link": "https://www.linkedin.com/in/andres-munevar/",
     "icon": "/icons/linkedin.svg"
   }
 ]

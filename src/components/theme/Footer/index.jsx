@@ -11,12 +11,9 @@ export const Footer = () => (
         <span>
           © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
           <span aria-label="love" role="img">
-            💖
+            🧡
           </span>{' '}
-          by{' '}
-          <a href="https://smakosh.com/?ref=portfolio-dev" rel="noopener noreferrer" target="_blank">
-            Smakosh
-          </a>
+          by Andres Munevar
         </span>
       </Details>
       <Links>
