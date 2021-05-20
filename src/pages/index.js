@@ -9,6 +9,5 @@ export default () => (
     <Projects />
     <Skills />
     <Experience />
-    {/* <Contact /> */}
   </Layout>
 );

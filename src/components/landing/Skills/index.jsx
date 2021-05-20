@@ -18,10 +18,10 @@ export const Skills = () => {
         <Details theme={theme}>
           <h1>About me</h1>
           <p>
-            I am a big fan of of hackathons and for the past two years I have been involved in seven of them as both a participant and an organizer. 
+            I am a big fan of hackathons and for the past two years I have been involved in seven of them as both a participant and an organizer. 
           </p>
           <p>
-            Oustide of work, I am always looking to find new hiking trails or to try new food. I also love raccoons and Korean dramas!
+            Outside of work, I am always looking to find new hiking trails or to try new food. I also love raccoons and Korean dramas!
           </p>
           <Button as={Link}  href="http://www.linkedin.com/in/andres-munevar/" target="_blank">
             Contact Me

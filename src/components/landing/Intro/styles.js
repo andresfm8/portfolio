@@ -22,9 +22,10 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
-  text-align: center;
+  text-align: left;
 
   @media (max-width: 960px) {
+    text-align: center;
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -34,7 +35,7 @@ export const Details = styled.div`
     font-size: 36pt;
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
-    @media (max-width: 960px) {
+    @media (max-width: 1090px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
 
@@ -48,8 +49,9 @@ export const Details = styled.div`
     font-size: 32pt;
     font-weight: normal;
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+    
 
-    @media (max-width: 960px) {
+    @media (max-width: 1610px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
 

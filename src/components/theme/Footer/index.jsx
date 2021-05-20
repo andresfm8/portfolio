@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'components/common';
 import { Wrapper, Flex, Links, Details } from './styles';
 import social from './social.json';
+import resume from '/static/Andres_Munevar_Resume.pdf';
 
 export const Footer = () => (
   <Wrapper>
@@ -18,7 +19,7 @@ export const Footer = () => (
       </Details>
       <Links>
         {social.map(({ id, name, link, icon }) => (
-          <a key={id} href={link} target="_blank" 
+          <a key={id} href={link ? link : resume} target="_blank" 
             rel="noopener noreferrer" aria-label={`follow me on ${name}`}
           >
             <img width="24" src={icon} alt={name} />
