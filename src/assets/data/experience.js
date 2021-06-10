@@ -1,7 +1,15 @@
 export const EXPERIENCE_DATA = {
   experiences: [
     {
-      id: 1,
+      id: 8,
+      title:  'Production Engineering Fellow',
+      organization: 'MLH Fellowship',
+      location: 'Remote',
+      type: 'job',
+      date: 'Jun. 2021 - Present',
+    }, 
+    {
+      id: 7,
       title:  'Web Developer',
       organization: 'Screen Industries Research and Training Centre (SIRT) ',
       location: 'Remote',
@@ -10,7 +18,7 @@ export const EXPERIENCE_DATA = {
       description: 'PHP, Timber, Twig, JavaScript , HTML, CSS, WordPress'
     }, 
     {
-      id: 2,
+      id: 6,
       title:  'Web Developer Co-op',
       organization: 'Screen Industries Research and Training Centre (SIRT) ',
       location: 'Remote',
@@ -19,7 +27,7 @@ export const EXPERIENCE_DATA = {
       description: 'PHP, Timber, Twig, JavaScript, HTML, CSS, WordPress'
     }, 
     {
-      id: 3,
+      id: 5,
       title:  'Full Stack Developer',
       organization: 'Hackademics Club - Sheridan College',
       location: 'Remote',
@@ -36,7 +44,7 @@ export const EXPERIENCE_DATA = {
       date: 'Apr. 2019 - Feb. 2021',
     },
     {
-      id: 5,
+      id: 3,
       title:  'Volunteer Event Coordinator & Software Developer',
       organization: 'Pueblo Science Hackathon',
       location: 'Remote',
@@ -45,7 +53,7 @@ export const EXPERIENCE_DATA = {
       description: 'Discord.js, Node.js'
     },
     {
-      id: 6,
+      id: 2,
       title:  'Software Development & Network Engineering',
       organization: 'Sheridan College',
       diploma: 'Advanced Diploma',
@@ -56,7 +64,7 @@ export const EXPERIENCE_DATA = {
       description: 'Relevant Courses: Algorithms and Data Structures, Object Oriented Programming, Software Design, Database Design'
     },
     {
-      id: 7,
+      id: 1,
       title:  'Order Support Associate',
       organization: 'Walmart',
       location: 'Mississauga, ON',
