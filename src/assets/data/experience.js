@@ -14,7 +14,7 @@ export const EXPERIENCE_DATA = {
       organization: 'Screen Industries Research and Training Centre (SIRT) ',
       location: 'Remote',
       type: 'job',
-      date: 'May. 2021 - Present',
+      date: 'May. 2021 - Jun. 2021',
       description: 'PHP, Timber, Twig, JavaScript , HTML, CSS, WordPress'
     }, 
     {
