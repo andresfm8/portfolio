@@ -1,33 +1,48 @@
 export const EXPERIENCE_DATA = {
   experiences: [
     {
+      id: 9,
+      title:  'Software Engineer I',
+      organization: 'Weight Watchers',
+      location: 'Remote',
+      type: 'job',
+      date: 'Mar. 2023 - Present',
+    },
+    {
       id: 8,
+      title:  'Software Engineer Intern',
+      organization: 'Weight Watchers',
+      location: 'Remote',
+      type: 'job',
+      date: 'May 2022 - Aug. 2022',
+    },
+    {
+      id: 7,
+      title:  'IT Developer Intern',
+      organization: 'TD Bank',
+      location: 'Remote',
+      type: 'job',
+      date: 'Sep. 2022 - Dec. 2022',
+    },
+    {
+      id: 6,
       title:  'Production Engineering Fellow',
       organization: 'MLH Fellowship',
       location: 'Remote',
       type: 'job',
-      date: 'Jun. 2021 - Present',
-    }, 
+      date: 'Jun. 2021 - Aug. 2021',
+    },
     {
-      id: 7,
-      title:  'Web Developer',
+      id: 5,
+      title:  'Web Developer Intern',
       organization: 'Screen Industries Research and Training Centre (SIRT) ',
       location: 'Remote',
       type: 'job',
-      date: 'May. 2021 - Jun. 2021',
-      description: 'PHP, Timber, Twig, JavaScript , HTML, CSS, WordPress'
-    }, 
-    {
-      id: 6,
-      title:  'Web Developer Co-op',
-      organization: 'Screen Industries Research and Training Centre (SIRT) ',
-      location: 'Remote',
-      type: 'job',
-      date: 'Jan. 2021 - Apr. 2021',
+      date: 'Jan. 2021 - Jun. 2021',
       description: 'PHP, Timber, Twig, JavaScript, HTML, CSS, WordPress'
     }, 
     {
-      id: 5,
+      id: 4,
       title:  'Full Stack Developer',
       organization: 'Hackademics Club - Sheridan College',
       location: 'Remote',
@@ -36,7 +51,7 @@ export const EXPERIENCE_DATA = {
       description: 'Gatsby, GraphQL HTML, SCSS'
     },
     {
-      id: 4,
+      id: 3,
       title:  'Operations Specialist',
       organization: 'Apple',
       location: 'Toronto, ON',
@@ -44,7 +59,7 @@ export const EXPERIENCE_DATA = {
       date: 'Apr. 2019 - Feb. 2021',
     },
     {
-      id: 3,
+      id: 2,
       title:  'Volunteer Event Coordinator & Software Developer',
       organization: 'Pueblo Science Hackathon',
       location: 'Remote',
@@ -53,23 +68,15 @@ export const EXPERIENCE_DATA = {
       description: 'Discord.js, Node.js'
     },
     {
-      id: 2,
+      id: 1,
       title:  'Software Development & Network Engineering',
       organization: 'Sheridan College',
       diploma: 'Advanced Diploma',
       GPA: '3.78',
       location: 'Brampton, ON / Oakville, ON',
       type: 'education',
-      date: 'Sep. 2019 - Dec. 2022 (Expected)',
+      date: 'Sep. 2019 - Dec. 2022',
       description: 'Relevant Courses: Algorithms and Data Structures, Object Oriented Programming, Software Design, Database Design'
-    },
-    {
-      id: 1,
-      title:  'Order Support Associate',
-      organization: 'Walmart',
-      location: 'Mississauga, ON',
-      type: 'job',
-      date: 'Nov. 2017 - Aug. 2019',
-    },
+    }
   ],
 }
