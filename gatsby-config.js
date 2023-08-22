@@ -1,7 +1,7 @@
 const config = require('./src/data/config');
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 });
 
 module.exports = {
@@ -11,7 +11,7 @@ module.exports = {
     author: config.author,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-image',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -22,7 +22,7 @@ module.exports = {
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
-          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+          Authorization: `bearer ${process.env.PORTFOLIO_GITHUB_TOKEN}`,
         },
         fetchOptions: {},
       },
@@ -42,18 +42,17 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-favicon',
+      resolve: 'gatsby-plugin-favicons',
       options: {
         logo: './static/favicon/avataaars.png',
-        injectHTML: true,
+        appName: 'Portfolio',
+        // injectHTML: true,
         icons: {
           android: true,
           appleIcon: true,
           appleStartup: true,
           coast: false,
           favicons: true,
-          firefox: true,
-          twitter: false,
           yandex: false,
           windows: false,
         },

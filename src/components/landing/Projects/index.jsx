@@ -4,7 +4,6 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
 import { Wrapper, Grid, Item, Content, ExtraInfo, Languages, IconLink } from './styles';
 import Github from 'components/common/Icons/Github';
-import Devpost from 'components/common/Icons/Devpost';
 import Web from 'components/common/Icons/Web';
 
 export const Projects = () => {
@@ -17,28 +16,27 @@ export const Projects = () => {
     },
   } = useStaticQuery(
     graphql`
-      {
-        github {
-          viewer {
-            pinnedItems(first: 6, types: [REPOSITORY, GIST]) {
-              totalCount
-              edges {
-                node {
-                  ... on GitHub_Repository {
-                    id
-                    name
-                    url
-                    description
-                    homepageUrl
-                    stargazers {
-                      totalCount
-                    }
-                    forkCount
-                    languages(first: 3) {
-                      nodes {
-                        id,
-                        name
-                      }
+    {
+      github {
+        viewer {
+          pinnedItems(first: 6, types: [REPOSITORY, GIST]) {
+            totalCount
+            edges {
+              node {
+                ... on GitHub_Repository {
+                  id
+                  name
+                  url
+                  description
+                  homepageUrl
+                  stargazers {
+                    totalCount
+                  }
+                  forkCount
+                  languages(first: 3) {
+                    nodes {
+                      id,
+                      name
                     }
                   }
                 }
@@ -47,6 +45,7 @@ export const Projects = () => {
           }
         }
       }
+    }
     `
   );
   return (

@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import Thumbnail from 'assets/thumbnail/thumbnail.png';
 import {
   url,
@@ -50,7 +49,7 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
   	}`;
 
   return (
-    <Helmet>
+    <>
       <meta name="description" content={description} />
       <meta name="image" content={Thumbnail} />
 
@@ -70,6 +69,6 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
       <link rel="publisher" href={socialLinks.google} />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
-    </Helmet>
+    </>
   );
 };
