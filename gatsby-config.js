@@ -13,8 +13,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-styled-components',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-graphql',
       options: {
@@ -39,23 +37,6 @@ module.exports = {
       options: {
         trackingId: config.googleAnalyticsID,
         head: true,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-favicons',
-      options: {
-        logo: './static/favicon/avataaars.png',
-        appName: 'Portfolio',
-        // injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          yandex: false,
-          windows: false,
-        },
       },
     },
     {
