@@ -44,8 +44,7 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "overrides": {
-    "sharp": "../_EXCLUDED_",
-    "gatsby-sharp": "../_EXCLUDED_"
+    "sharp": "../_EXCLUDED_"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
