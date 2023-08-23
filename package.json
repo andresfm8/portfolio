@@ -9,7 +9,7 @@
     "deepmerge": "^4.3.1",
     "dotenv": "^16.3.1",
     "formik": "^2.4.3",
-    "gatsby": "^5.13.0-next.1",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-canonical-urls": "^5.11.0",
     "gatsby-plugin-google-analytics": "^5.11.0",
     "gatsby-plugin-nprogress": "^5.11.0",
@@ -24,7 +24,6 @@
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-vertical-timeline-component": "^3.6.0",
-    "sharp": "^0.32.5",
     "styled-components": "^6.0.7",
     "yup": "^1.2.0"
   },
